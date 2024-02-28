@@ -13,5 +13,75 @@
     <br>
 
     <h1>&lt;form&gt; element</h1>
+    <p>Form elements must have <em>actions</em> that defines the location for the data to be sent. <br>
+        <em>method</em> defines which HTTP method to send or receive data. &lpar;get or post&rpar;
+    </p>
+    <h2>Example</h2>
+    <form action="/my-handling-form-page" method="post"></form>
+    <code>
+        <pre>
+            form action="/my-handling-form-page" method="post"
+        </pre>
+    </code>
+
+    <br>
+
+    <h1>&lt;label&gt;, &lt;input&gt;, and &lt;textarea&gt; elements</h1>
+    <p><b>Label</b> element is for adding identification to the input field, where the <em>name</em> attribute allows client and server to handle data by name</p>
+    <p><b>Input</b> element is for creating a single line text input</p>
+    <p><b>Textarea</b> element is for creating a multi line text input</p>
+    <p>Input element consists of type, id, and name attribute</p>
+    <h2>Example:</h2>
+    <ul>
+        <li>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="user_name">
+        </li>
+
+        <li>
+            <label for="msg">Message:</label>
+            <textarea name="user_message" id="msg" cols="30" rows="10"></textarea>
+        </li>
+    </ul>
+
+    <br>
+
+    <p>Defining default value can be done with <em>value</em> attribute in input element</p>
+    <h2>Example:</h2>
+    <ul>
+        <li>
+            <label for="sentence">Sentence:</label>
+            <input type="text" name="sentence_user" id="sentence" value="A default sentence">
+        </li>
+    </ul>
+
+    <br>
+
+    <p>Adding a button to allow information to be submitted using &lt;button&gt; element</p>
+    <h2>Example:</h2>
+        <button type="submit">Send your messages</button>
+
+    <h1>The &lt;fieldset&gt; and &lt;legend&gt; elements</h1>
+    <p><b>Fieldset:</b> Create groups of widgets that share the same purpose</p>
+    <p><b>Legend:</b> Label a fieldset by dscribing the purpose of the fieldset</p>
+    <h2>Example:</h2>
+    <form action="/server-page" method="post">
+        <fieldset>
+            <legend>Fruit juice size</legend>
+
+            <p>
+                <input type="radio" name="size" id="size_1" value="small">
+                <label for="size_1">Small</label>
+            </p>
+            <p>
+                <input type="radio" name="size" id="size_2" value="medium">
+                <label for="size_2">Medium</label>
+            </p>
+            <p>
+                <input type="radio" name="size" id="size_3" value="big">
+                <label for="size_3">Big</label>
+            </p>
+        </fieldset>
+    </form>
 </body>
 </html>
