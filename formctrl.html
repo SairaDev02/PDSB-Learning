@@ -7,7 +7,7 @@
 </head>
 <body>
     <a href="forms.html">Previous link</a>
-    <a href="">Next link</a>
+    <a href="inputtype.html">Next link</a>
 
     <br>
 
@@ -106,7 +106,103 @@
     <h2>Example:</h2>
     <input type="file" name="file" id="file" accept="image/*" multiple>
     <p>This allows users to submit multiple image files</p>
-    
 
+    <br>
+
+    <h1>Multi-line Text Fields</h1>
+    <p>Specified using a &lt;textarea&gt; element</p>
+    <h2>Example:</h2>
+    <textarea name="textbig" id="textbig" cols="30" rows="10" wrap="hard"></textarea>
+
+    <br>
+
+    <h1>Drop-down Controls</h1>
+    <h2>Select box</h2>
+    <p>Created with a &lt;select&gt; element with one or more &lt;option&gt;</p>
+    <h3>Example:</h3>
+    <select name="simple" id="simple">
+        <option value="banana" selected>Banana</option>
+        <option value="cherry">Cherry</option>
+        <option value="lemon">Lemon</option>
+    </select>
+
+    <h2>Using optgroup</h2>
+    <p>Option element can be nested inside &lt;optgroup&gt;</p>
+    <h3>Example:</h3>
+    <select name="groups" id="groups">
+        <optgroup label="fruits">
+            <option value="banana" selected>Banana</option>
+            <option value="cherry">Cherry</option>
+            <option value="lemon">Lemon</option>
+        </optgroup>
+        <optgroup label="vegetables">
+            <option value="carrot">Carrot</option>
+            <option value="eggplant">Eggplant</option>
+            <option value="potato">Potato</option>
+        </optgroup>
+    </select>
+
+    <br>
+
+    <h2>Multiple choice select box</h2>
+    <p>Adding <em>multiple</em> attribute to the select element allows selecting mulitple values</p>
+    <h3>Example:</h3>
+    <select name="groups" id="groups" multiple size="2" col>
+        <optgroup label="fruits">
+            <option value="banana" selected>Banana</option>
+            <option value="cherry">Cherry</option>
+            <option value="lemon">Lemon</option>
+        </optgroup>
+        <optgroup label="vegetables">
+            <option value="carrot">Carrot</option>
+            <option value="eggplant">Eggplant</option>
+            <option value="potato">Potato</option>
+        </optgroup>
+    </select>
+
+    <br>
+
+    <h1>Autocomplete Box</h1>
+    <p>For providing suggested, autocompleted values for form widgets using the &lt;datalist&gt; element with child option elements to specify values to display</p>
+    <p>Data list is then bound to an input element using the <em>list</em> attribute with the value <em>id</em> of the data list to bind</p>
+    <h2>Example:</h2>
+    <label for="myFruit">What's your favourite fruit?</label>
+    <input type="text" name="myFruit" id="myFruit" list="mySugguestion">
+    <datalist id="mySugguestion">
+        <option value="apple">Apple</option>
+        <option value="banana">Banana</option>
+        <option value="cherry">Cherry</option>
+    </datalist>
+
+    <br>
+
+    <h1>Meters</h1>
+    <p>Meters and progress bars are visual representations of numeric values</p>
+    <p>Uses &lt;progress&gt; and &lt;meter&gt; elements</p>
+
+    <h2>Meter</h2>
+    <p>Represents a fixed value delimited by <em>max</em> and <em>min</em> values</p>
+    <dl>
+        <dt>Lower part</dt>
+        <dd>Range between <em>min</em> and <em>low</em>, inclusive</dd>
+
+        <dt>Medium part</dt>
+        <dd>Range between <em>low</em> and <em>high</em>, exclusive</dd>
+
+        <dt>Higher part</dt>
+        <dd>Range between <em>high</em> and <em>max</em>, inclusive</dd>
+    </dl>
+
+    <p><em>optimum</em> defines the optimum value for the meter element</p>
+    <h3>Example:</h3>
+    <meter min="0" max="100" value="75" low="33" high="66" optimum="0">75</meter>
+
+    <br>
+
+    <h2>Progress</h2>
+    <p>Represents a value that changes overtime up to a maximum value specified by <em>max</em> attribute</p>
+    <p>Created using &lt;progress&gt; element</p>
+    <h3>Example:</h3>
+    <progress max="100" value="75">75/100</progress>
 </body>
 </html>

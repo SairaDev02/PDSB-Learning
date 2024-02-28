@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Controls</title>
+</head>
+<body>
+    <a href="formctrl.html">Previous link</a>
+    <a href="">Next link</a>
+
+    <br>
+    
+    <h1>Email Address Field</h1>
+    <p>Using <em>email</em> type, user is required to submit vaild email address into the field</p>
+    <h2>Example:</h2>
+    <input type="email" name="email" id="email">
+
+    <br>
+
+    <h1>Search Field</h1>
+    <p>Search field are usually rendered differently than text field. Allows autocompletion across multiple pages</p>
+    <h2>Example:</h2>
+    <input type="search" name="search" id="search">
+
+    <br>
+
+    <h1>Phone Number Field</h1>
+    <p>Special field for filling in phone numbers using <em>tel</em> type</p>
+    <h2>Example;</h2>
+    <input type="tel" name="telephone" id="telephone">
+
+    <br>
+
+    <h1>URL Field</h1>
+    <p>Special type of field for entering URL's using <em>url</em> type</p>
+    <h2>Example:</h2>
+    <input type="url" name="link" id="link">
+    <p>Applies validation constraints to the field</p>
+
+    <br>
+
+    <h1>Numeric Field</h1>
+    <p>Allows only floating point numbers using <em>number</em> type</p>
+    <h2>Example:</h2>
+    <input type="number" name="number" id="number" min="1" max="10" step="1">
+    <p><em>min</em>, <em>max</em>, and <em>step</em> attribute can be added to set minimum and maximum value as well as steps of changing values</p>
+
+    <br>
+
+    <h1>Slider Controls</h1>
+    <p>Sliders allow picking numbers from a defined range of values. Less accurate than text input.</p>
+    <h2>Example:</h2>
+    <input type="range" name="slider" id="slider" min="1" max="100" step="1">
+
+    <br>
+
+    <h1>Date and Time Pickers</h1>
+    <p>Allows date and time input using <em>date</em> type</p>
+    <h2>Example:</h2>
+    <p>Widget to display and pick a date with time</p>
+    <input type="datetime-local" name="datetime" id="datetime">
+    <p>Widget to display and pick a month with a year</p>
+    <input type="month" name="month" id="month">
+    <p>Widget to display and pick a time value. Value is returned in a 24-hour format</p>
+    <input type="time" name="time" id="time">
+    <p>Widget to display and pick a week number and its year</p>
+    <input type="week" name="week" id="week">
+    <p>Adding constraints to the date and time input</p>
+    <label for="myDate">When are you available this summer?</label>
+    <input 
+        type="date"
+        name="myDate"
+        id="myDate"
+        min="2024-06-01"
+        max="2024-08-31"
+        step="7" >
+
+    <br>
+
+    <h1>Color Picker Control</h1>
+    <p>Creates a color picker using <em>color</em> type. Returns 6-value hexadecimal color</p>
+    <input type="color" name="color" id="color">
+
+
+
+
+</body>
+</html>
