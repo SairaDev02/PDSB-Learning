@@ -83,5 +83,18 @@
             </p>
         </fieldset>
     </form>
+
+    <br>    
+
+    <p>To make an input field as required, use <em>aria-label</em> in span element and <em>required</em> attribute in input element</p>
+    <h2>Example</h2>
+    <form action="" method="">
+        <label for="mail">
+            <span>Email: </span>
+            <strong><span aria-label="required" style="color: red;">*</span></strong>
+        </label>
+        <input type="email" id="mail" name="usermail" required>
+    </form>
+    
 </body>
 </html>
