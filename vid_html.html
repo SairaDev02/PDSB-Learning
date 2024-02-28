@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos in HTML</title>
+</head>
+<body>
+    <a href="img_html.html">Previous link</a>
+    <a href="audio_html.html">Next link</a>
+
+    <br>
+
+    <h1>Implementing the &lt;video&gt; element to display videos</h1>
+    <p> The video element allows embedding videos into the browser.</p>
+    <h2>Example</h2>
+    <video src="example.webm" controls>
+        <p>Your browser doesn't support HTML video. Here's the <a href="example.webm">link</a> to the video instead.</p> <!--Fallback content-->
+    </video>
+    <p><em>controls</em> attribute is added to introduce browser video controls to the user.</p>
+    <p>Additional video file formats may be added to ensure compatibility using &lt;source&gt; element.</p>
+    <h2>Example:</h2>
+    <video controls>
+        <source srcset="example.mp4" type="video/mp4">
+        <source srcset="example.webm" type="video/webm">
+        <p>Your browser doesn't support HTML video. Here's the <a href="example.webm">link</a> to the video instead.</p> <!--Fallback content-->
+    </video>
+
+    <h1>Displaying video text tracks</h1>
+    <p>&lt;track&gt; element can be used to add transcript to the video with the WebVTT file format.</p>
+    <h2>Example:</h2>
+    <video controls>
+        <source srcset="example.mp4" type="video/mp4">
+        <source srcset="example.webm" type="video/webm">
+        <track kind="subtitles" src="subtitles_jp.vtt" srclang="jp" label="Japanese">
+        <p>Your browser doesn't support HTML video. Here's the <a href="example.webm">link</a> to the video instead.</p> <!--Fallback content-->
+    </video>
+    
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images in HTML</title>
+</head>
+<body>
+    <a href="docstruct.html">Previous Link</a>
+    <a href="vid_html.html">Next Link</a>
+
+    <br>
+
+    <h1>Putting an image in HTMl</h1>
+    <p>&lt;img&gt; element is used for adding an image into the site. <br> It requires the <em>src</em> attribute to link the image for it to be displayed.</p>
+    <h2>Example:</h2>
+    <img src="adrian-infernus-ROdim26cPC0-unsplash.jpg" alt="Image of a scenery">
+    <p><em>alt</em> attribute is used for when image cannot be displayed properly. Also helps people that use screen readers.</p>
+
+    <br>
+
+    <h2>Specifying Width and Height</h2>
+    <p><em>Width</em> and <em>Height</em> attributes are used to set the size of the image in pixels size.</p>
+    <h2>Example:</h2>
+    <img src="adrian-infernus-ROdim26cPC0-unsplash.jpg" alt="Image of a scenery" width="360" height="240">
+    <p>Image is displayed at 360x240 pixels.</p>
+    
+    <br>
+
+    <h2>Adding title attribute to img element</h2>
+    <p><em>title</em> attribute can be added to provide more information about the image.</p>
+    <h2>Example:</h2>
+    <img src="adrian-infernus-ROdim26cPC0-unsplash.jpg" alt="Image of a scenery" width="360" height="240" title="Northern Forest">
+    <p>The title is displayed when hovering the pointer on the image.</p>
+
+    <br>
+
+    <h2>Annotating images with figures and figure captions</h2>
+    <p>To add captions that supports screen readers, &lt;figure&gt; and &lt;figurecaption&gt; elements are used.</p>
+    <h2>Example:</h2>
+    <figure>
+        <img src="adrian-infernus-ROdim26cPC0-unsplash.jpg" alt="Image of a scenery" width="360" height="240" title="Northern Forest">
+        <figcaption>
+            A scenery of the Northern Forest.
+        </figcaption>
+    </figure>
+
+    <br>
+
+    <h1>Responsive Images</h1>
+    <h2>Resolution Switching: Different sizes</h2>
+    <p>Using standard &lt;img&gt; element with <em>srcset</em> and <em>sizes</em> attribute to provide several images with hints for the browser to select the correct one.</p>
+    <h2>Example:</h2>
+    <img 
+    srcset="dog-480w.jpg 480w, dog-800w.jpg 800w"
+    sizes="(max-width: 600px) 480px, 800px"
+    src="dog-800w.jpg" 
+    alt="Picture of a dog"
+    />
+    <p>480w indicates the intrinsic size aka the real size</p>
+    <p><em>sizes</em> has a media condition &lpar;max-width: 600px&rpar; stating if viewport is 600px or less, it's true.</p>
+    <p>So, if viewport is 600px or less, dog-480w will be shown, else dog-800w is displayed instead.</p>
+    <p>Older browsers will use <em>src</em> instead</p>
+
+    <br>
+
+    <h2>Resolution Switching: Same Size, Different Resolutions</h2>
+    <p>Supporting different display resolutions but seeing same real-world size on the screen. <br>
+        Use <em>srcset</em> with x-descriptors and without <em>sizes</em>
+    </p>
+    <h2>Example:</h2>
+    <img src="dog-640w.jpg" alt="Image of a dog" srcset="dog-320w.jpg, dog-480w.jpg 1.5x, dog-640w.jpg 2x"> <!--CSS
+                img {
+                    width: 320px;
+                }-->
+        <!--CSS applied to image to set width of 320px-->
+    <br>
+
+    <h1>Art Direction</h1>
+    <p>&lt;picture&gt; element is used to wrap several &lt;sources&gt; elements that provide different sources for the browser to choose, followed by &lt;img&gt; element.</p>
+    <h2>Example:</h2>
+    <picture>
+        <source media="(max-width: 799px)" srcset="dog-480w-portrait.jpg"/>
+        <source media="(max-width: 800px)" srcset="dog-800w.jpg"/>
+        <img src="dog-800w.jpg" alt="Image of a dog">
+    </picture>
+    <p>If viewport is less than 800px, the portrait image will be displayed, else the second image.</p>
+    <p><em>img</em> with <em>src</em> and <em>alt</em> must be added as fallback.</p>  
+
+</body>
+</html>

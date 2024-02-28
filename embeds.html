@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedding</title>
+    <style>
+    iframe {
+        border: none;
+        }
+    </style>
+</head>
+<body>
+    <a href="docstruct.html">Previous link</a>
+    <a href="img_html.html">Next link</a>
+
+    <br>
+
+    <h1>Embedding in HTML</h1>
+    <p>The &lt;iframe&gt; element allow embedding other web documents into the current doucment. It does possess some security vunerability.</p>
+    <h2>Example:</h2>
+    <iframe 
+    src="https://developer.mozilla.org/en-US/docs/Glossary" 
+    width="100%"
+    height="500"
+    allowfullscreen
+    sandbox>
+        <p>
+            <a href="/en-US/docs/Glossary">
+                Fallback link for browsers that doesn't support iframes
+            </a>
+        </p>
+    </iframe>
+    <p>The mozilla website doesn't allow display of content due to security concerns.</p>
+    <p><strong>Always use sandbox attribute in iframes!!!</strong></p>
+
+    <h1>&lt;embed&gt; and &lt;object&gt; elements</h1>
+    <p>Allows embedding of external content e.g PDFs. Linking the sources is recommended instead of embedding them.</p>
+    <h2>Example for object:</h2>
+    <object data="mypdf.pdf" type="application/pdf" width="800" height="1200">
+        <p>
+            You don't have a PDF plugin. <a href="mypdf.pdf">Download</a> it instead.
+        </p>
+    </object>
+
+</body>
+</html>

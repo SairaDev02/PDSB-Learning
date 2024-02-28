@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyperlinks</title>
+</head>
+<body>
+    <a href="htext.html">Previous link</a>
+    <a href="advtext.html">Next link</a>
+    <br>
+
+    <h1>Links!</h1>
+    <!--The following is a basic link that uses an anchor tag and href attribute-->
+    <p>The following link is made using &lt;a&gt; element with href attribute</p>
+    <a href="http://www.google.com" title="The Google Search Engine">Link to google search</a>
+    <!--href: hypertext reference contains the web address-->
+    <!--Title is added to provide more info about the link-->
+    
+    <!--Block level links-->
+    <h1>Block level links!</h1>
+    <a href="http://developer.mozilla.org/en-US/">
+        <h1>MDN Web Docs</h1>
+    </a>
+    <p>Above is a block level link where the text enclosed in a header element becomes a hyperlink</p>
+    <br>
+
+    <!--Image links-->
+    <h1>Image links!</h1>
+    <p>The following is an image which redirects to a link when clicked on</p>
+    <a href="http://developer.mozilla.org/en-US/">
+      <img src="adrian-infernus-ROdim26cPC0-unsplash.jpg" alt="Image of a scenery" width="360" height="240">
+    </a>  
+
+    <br>
+
+    <h2>Moving down directory level</h2>
+    <!--Moving down into subdirectories-->
+    <p>Visit my 
+        <a href="projects/index.html">homepage</a>
+    </p>
+
+    <br>
+
+    <h2>Moving up directory level</h2>
+    <!--Moving up into parent directories-->
+    <p>Visit my
+        <a href="../projects/index.html">homepage</a> 
+        <!--Goes up one directory level then back down-->
+        <!--../../.. Goes up 3 levels-->    
+    </p>
+    
+    <br>
+
+    <h1>Document Fragments!</h1>
+    <p>Linking specific part of an HTML document</p>
+
+    <h2 id="Mailing_address">Mailing address</h2>
+
+    <p>id= is used to link to the specific heading</p>
+
+    <p>Below is a link to the header</p>
+    <p>
+        Want to write us a letter? Use our
+        <a href="hyperlink.html#Mailing_address">
+            mailing address
+        </a>
+        <!--# symbol is used to link the document reference-->
+        <!--# can be used alone to link to another part of the document-->
+    </p>
+</body>
+</html>

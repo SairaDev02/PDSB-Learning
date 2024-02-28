@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vector Graphics</title>
+</head>
+<body>
+    <a href="embeds.html">Previous link</a>
+    <a href="">Next link</a>
+
+    <br>
+
+    <h1>SVG Vector Image</h1>
+    <p>SVG is an XML-based language for describing vector images. <br> Similar to HTML as markup, has many elements for defining images.</p>
+    <h2>Example:</h2>
+    <svg
+        version="1.1"
+        baseProfile="full"
+        width="300"
+        height="200"
+        xmlns="http://www.w3.org/2000/svg">
+
+        <rect width="100%" height="100%" fill="black">
+        <circle cx="150" cy="100" r="90" fill="blue">
+    </svg>
+
+    <h1>Adding SVG images on the site</h1>
+    <h2>Using img element:</h2>
+    <img src="square.svg" alt="Shape with 4 sides of equal length" height="100" width="100">
+    <p>Fallback image</p>
+    <img src="square.png" alt="Shape with 4 sides of equal length" srcset="square.svg">
+    <!--Older browsers will drop the SVG image and use PNG instead-->
+
+    <br>
+
+    <h2>Using iframe element</h2>
+    <iframe src="triangle.svg" frameborder="0" width="100" height="100" sandbox>
+        <img src="triangle.png" alt="Shape with 3 sides of unequal length"> <!--Fallback-->
+    </iframe>
+    <p><em>Can't be manipulated with JavaScript</em></p>
+    
+
+
+</body>
+</html>

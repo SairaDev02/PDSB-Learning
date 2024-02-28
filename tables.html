@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tables</title>
+    <link rel="stylesheet" href="tables.css">
+</head>
+<body>
+    <a href="audio_html.html">Previous link</a>
+    <a href="tablesadv.html">Next link</a>
+
+    <br>
+
+    <h1>Basic Tables</h1>
+    <br>
+    <h2>Table element</h2>
+    <p>&lt;table&gt; element contains the content of the table</p>
+    <h2>Example:</h2>
+    <table>
+        <td>
+            Cell 1
+        </td>
+        <td>
+            Cell 2
+        </td>
+    </table>
+    <p>&lt;td&gt; element corresponds to a table cell &lpar;table data&rpar; in a row</p>
+    
+    <br>
+
+    <p>To put more rows, &lt;tr&gt; element is used to define rows. Use mulitple row elements for more rows displayed.</p>
+    <h2>Example:</h2>
+    <table>
+        <tr>
+            <td>Cell 1</td>
+            <td>Cell 2</td>
+            <td>Cell 3</td>
+        </tr>
+        <tr>
+            <td>Cell 4</td>
+            <td>Cell 5</td>
+            <td>Cell 6</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <p>To add table headers, use &lt;th&gt; element</p>
+    <h2>Example:</h2>
+    <table>
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+            <th>Header 3</th>
+        </tr>
+
+        <tr>
+            <td>Cell 1</td>
+            <td>Cell 2</td>
+            <td>Cell 3</td> 
+        </tr>
+    </table>
+
+    <br>
+
+    <p>To make a column or row to span, use <em>colspan</em> and <em>rowspan</em> and specify the value to span.</p>
+    <h2>Example:</h2>
+    <table>
+        <tr>
+            <th colspan="2">Animals</th> <!--Span column horizontally by 2 cells-->
+        </tr>
+        <tr>
+            <th colspan="2">Hippopotamus</th>
+        </tr>
+        <tr>
+            <th rowspan="2">Horse</th> <!--Span row vertically by 2 cells-->
+            <td>Mare</td>
+        </tr>
+        <tr>
+            <td>Stallion</td>
+        </tr>
+        <tr>
+            <th colspan="2">Crocodile</th>
+        </tr>
+        <tr>
+            <th rowspan="2">Chicken</th>
+            <td>Hen</td>
+        </tr>
+        <tr>
+            <td>Rooster</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <p>To style the table and its contents, use &lt;col&gt; element within &lt;colgroup&gt; to style columns. <i>Remove tables.css to show</i></p>
+    <h2>Example:</h2>
+    <table>
+        <colgroup>
+            <col>
+            <col style="background-color: blue;">
+            <col style="background-color: blueviolet;">
+            <col style="background-color: grey;">
+        </colgroup>
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+            <th>Header 3</th>
+        </tr>
+
+        <tr>
+            <td>Cell 1</td>
+            <td>Cell 2</td>
+            <td>Cell 3</td> 
+        </tr>
+
+        <tr>
+            <td>Cell 3</td>
+            <td>Cell 4</td>
+            <td>Cell 5</td>
+        </tr>
+    </table>
+
+</body>
+</html>

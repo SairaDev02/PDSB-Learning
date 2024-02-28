@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Text Format</title>
+</head>
+<body>
+    <a href="hyperlink.html">Previous link</a>
+    <a href="docstruct.html">Next Link</a>
+    
+    <br>
+
+    <!--Description lists-->
+    <h1>Description Lists!</h1>
+    <p>Description lists allows creation of a list of items or terms along with their descriptions</p>
+    <h2>Example:</h2>
+    <dl> <!--Description list element-->
+        <dt>
+            Apple
+        </dt>
+        <dd>
+            An apple is a fruit produced by various species of the genus Malus in the family Rosaceae, particularly Malus domestica. It has a round or oval shape and typically grows on trees. Apples have a tough outer skin that can be red, green, yellow, or combinations thereof, depending on the variety. The flesh inside is juicy and comes in shades of white to pale yellow.
+        </dd>
+        <dt>
+            Orange
+        </dt>
+        <dd>
+            An orange is a citrus fruit that grows on evergreen trees of the Citrus species, primarily Citrus sinensis. The fruit has a round or oval shape with a thick, bright-colored skin, which can be either smooth (as in Valencia and navel oranges) or rough (as in satsuma mandarins). Underneath the peel, an orange contains juicy segments of translucent pulp surrounded by membranes. Oranges are rich in vitamin C and have a sweet flavor with slightly tangy undertones.
+        </dd>
+    </dl>
+    <!--Multiple descriptions for one term are allowed-->
+
+    <br>
+
+    <h1>Quotations!</h1>
+
+    <h2>Blockquotes</h2>
+    <p>If a paragraph or multiple, list, etc is quoted from somewhere else, wrap the content in a &lt;blockquote&gt; element.</p>
+    <h2>Example:</h2>
+    <blockquote cite="https://developer.mozilla.org.en-US/docs/Web/HTML/Element/blockquote">
+        <p>
+            The <strong>HTML</strong>&lt;blockquote&gt; Element indicates that the enclosed text is an extended quotation.
+        </p>
+    </blockquote>
+    <!--site attribute is used to add source link to the quote-->
+
+    <br>
+
+    <h2>Inline Quotes</h2>
+    <p>Inline quotes uses &lt;q&gt; for short quotation that doesn't require a paragraph break</p>
+    <h2>Example:</h2>
+    <p>
+        The quote element &lt;q&gt; is 
+        <q cite="https://developer.mozilla.org.en-US/docs/Web/HTML/Element/q">
+            intended for short quotations that don't require paragraph breaks.
+        </q>
+    </p>
+
+    <br>
+
+    <h2>Citations</h2>
+    <p>Contains the title of the resource being quoted. Links can be added.</p>
+    <h2>Example:</h2>
+    <p>According to
+        <a href="http:///en-US/docs/Web/HTML/Element/blockquote">
+            <cite>
+                MDN blockquote page
+            </cite>
+        </a>
+        :
+    </p>
+
+    <br>
+
+    <h1>Abbreviations</h1>
+    <p>&lt;abbr&gt; element is used to wrap around an abbreviation or acronym. Provide the title attribute for adding the full term of the abbreeviation.</p>
+    <h2>Example</h2>
+    <p>We use <abbr title="Hypertext Markup Language">HTML</abbr> to structure our web documents.</p>
+
+    <br>
+
+    <h1>Mark up contact details</h1>
+    <p>&lt;address&gt; element is used to markup addresses. It can include more complex markup and other forms of contact info.</p>
+    <h2>Example:</h2>
+    <address>
+        <p>
+            Chris Mills <br>
+            Manchester <br>
+            The Grim North <br>
+            UK
+        </p>
+
+        <ul>
+            <li>Tel: 012 3456 7891</li>
+            <li>Email: chrismi@gmail.com</li>
+        </ul>
+    </address>
+
+    <br>
+
+    <h1>Superscript and Subcript</h1>
+    <p>&lt;sup&gt; and &lt;sub&gt; are for superscript and subscript respectively. Useful for date, chemical formula and simple math equations.</p>
+    <h2>Example:</h2>
+    <p>My birthday is on the 12<sup>th</sup> of May. <br>
+        Methane chemical formula: CH<sub>4</sub>
+    </p>
+
+    <br>
+
+    <h1>Code Markup</h1>
+    <p>There are a number of elements for marking up code in HTML</p>
+    <ul>
+        <li>code: Markup generic code</li>
+        <li>pre: Markup code with whitespace retained</li>
+        <li>var: Markup variable names</li>
+        <li>kbd: Markup keyboard or other input into the computer</li>
+        <li>samp: Markup output of the code</li>
+    </ul>
+    <h2>Example:</h2>
+    <p>
+        <pre>
+            <code>const para = document.querySelector('p');
+
+            para.onclick = function() {
+              alert('Owww, stop poking me!');
+            }</code>
+        </pre>
+            
+            <p>
+              You shouldn't use presentational elements like <code>&lt;font&gt;</code> and
+              <code>&lt;center&gt;</code>.
+            </p>
+            
+            <p>
+              In the above JavaScript example, <var>para</var> represents a paragraph
+              element.
+            </p>
+            
+            <p>Select all the text with <kbd>Ctrl</kbd>/<kbd>Cmd</kbd> + <kbd>A</kbd>.</p>
+            
+        <pre>
+            $ <kbd>ping mozilla.org</kbd>
+            <samp>PING mozilla.org (63.245.215.20): 56 data bytes
+            64 bytes from 63.245.215.20: icmp_seq=0 ttl=40 time=158.233 ms</samp>
+        </pre>
+    </p>
+
+    <br>
+
+    <h1>Time and Date Markup</h1>
+    <p>HTML provides &lt;time&gt; element for marking up times and dates in a machine-readable format.</p>
+    <h2>Examples:</h2>
+    <p>
+        <!-- Standard simple date -->
+        <time datetime="2016-01-20">20 January 2016</time>
+
+        <!-- Just year and month -->
+        <time datetime="2016-01">January 2016</time>
+
+        <!-- Just month and day -->
+        <time datetime="01-20">20 January</time>
+
+        <!-- Just time, hours and minutes -->
+        <time datetime="19:30">19:30</time>
+
+        <!-- You can do seconds and milliseconds too! -->
+        <time datetime="19:30:01.856">19:30:01.856</time>
+
+        <!-- Date and time -->
+        <time datetime="2016-01-20T19:30">7.30pm, 20 January 2016</time>
+
+        <!-- Date and time with timezone offset -->
+        <time datetime="2016-01-20T19:30+01:00">
+        7.30pm, 20 January 2016 is 8.30pm in France</time>
+
+        <!-- Calling out a specific week number -->
+        <time datetime="2016-W04">The fourth week of 2016</time>
+    </p>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Tables</title>
+    <link rel="stylesheet" href="tables.css">
+</head>
+<body>
+    <a href="tables.html">Previous link</a>
+    <a href="">Next link</a>
+
+    <br>
+
+    <h1>Advanced HTML Tables</h1>
+    <p>Adding captions to a table with &lt;caption&gt;</p>
+    <h2>Example</h2>
+    <table>
+        <caption>
+            A caption
+        </caption>
+        <tr>
+            <td>Table</td>
+            <td>Table</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <p>Adding table structure with &lt;thead&gt;, &lt;tfoot&gt; and &lt;tbody&gt;</p>
+    <h2>Example</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Purchase</th>
+                <th>Cost in RM</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Book</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Pencil</td>
+                <td>1</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th>SUM</th>
+                <td>11</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <br>
+
+    <p>Nesting tables</p>
+    <h2>Example:</h2>
+    <table id="table1">
+        <tr>
+            <th>Title 1</th>
+            <th>Title 2</th>
+            <th>Titile 3</th>
+        </tr>
+
+        <tr>
+            <td id="nested1">
+                <table id="nestedtable1">
+                    <tr>
+                        <td>cell 1</td>
+                        <td>cell 2</td>
+                    </tr>                        
+                </table>
+            </td>
+
+            <td>Cell 2</td>
+            <td>Cell 3</td>
+        </tr>
+
+        <tr>
+            <td>Cell 4</td>
+            <td>Cell 5</td>
+            <td>Cell 6</td>
+        </tr>
+    </table>
+</body>
+</html>
