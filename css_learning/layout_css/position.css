@@ -1,0 +1,52 @@
+/* TODO CSS Positioning */
+
+/*? Position property sets 5 different position values method for an element */
+
+/** Static: default position*/
+
+div.static {
+    position: static;
+    border: 3px solid red;
+}
+
+/** Relative: positioned relative to normal */
+div.relative {
+    position: relative;
+    left: 30px;
+    border: 3px solid red;
+}
+
+/** Fixed: positioned relative to viewport, stays put when scrolled */
+div.fixed {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    border: 3px solid red;
+}
+
+/** Absolute: positioned relative to the nearest positioned ancestor (previous element) */
+div.relative {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    border: 3px solid red;
+}
+
+div.absolute {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 200px;
+    height: 100px;
+    border: 3px solid red;
+}
+
+/** Sticky: positioned based on user scroll */
+
+div.sticky {
+    position: sticky;
+    top: 0;
+    background-color: green;
+    border: 2px solid orchid;
+}

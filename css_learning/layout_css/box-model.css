@@ -1,0 +1,15 @@
+/* TODO CSS Box model */
+
+/*? Wraps around every HTML element */
+/*? Consists of: content, padding, borders, margins */
+/*! Refer to image added in folder */
+
+/** Example */
+
+div {
+    width: 300px;
+    height: 50;
+    border: 15px solid red;
+    padding: 50px;
+    margin: 20px;
+}

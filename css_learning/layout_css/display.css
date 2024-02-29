@@ -1,0 +1,10 @@
+/* TODO CSS Display property */
+
+/*? Display property is used to specify how an element is shown */
+
+/** Example */
+
+p {
+    display: block; /* Starts on new line and takes full width */
+    display: inline; /* Does not start on new line and takes required width */
+}
