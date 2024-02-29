@@ -1,0 +1,78 @@
+h1 {
+    color: red;
+}
+/*Sets the h1 selector text content to red color*/
+
+p {
+    color: green;
+}
+/*Sets the paragraph selector text content to green color*/
+
+p, li {
+    color: green;
+}
+/*Targets multiple selectors*/
+
+/**Changing default behavior of elements**/
+
+li {
+    list-style-type: none;
+}
+/*Changes the list to not include any list style (bullet type)*/
+
+/**Using class attribute to style specific elements*/
+
+.itemTwo {
+    font-weight: bold;
+}
+/*Changes text content in list element with class name*/
+
+li.itemTwo {
+    font-weight: bold;
+}
+/*Targets any li elements that has the class itemTwo*/
+
+/**Styling based on location in document*/
+
+li em {
+    color: rebeccapurple;
+}
+/*Specifically targets the em element nested inside the li element*/
+
+h1 + p {
+    font-family: 'Verdana';
+}
+/*?Uses + (next-sibling combinator) to syle a paragraph directly after a heading at the same hierarchy level*/
+
+/**Styling based on state*/
+
+a:link {
+    color: pink;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:hover {
+    color: violet;
+    text-decoration: none;
+}
+/*?To style links, use the anchor element. Differentiate states with different colours*/
+
+/**Combining selectors and combinators*/
+
+article p span {
+    text-align: center;
+}
+/*Selects any span element that is inside p element, which is inside article element*/
+
+h1 + ul + p {
+    color: aqua;
+}
+/*Selects any p element that comes directly after ul element, which comes directly after heading element*/
+
+article + p span {
+    text-transform: capitalize;
+}
+/*?Selects any span element that's inside p element, which comes directly after article element*/
