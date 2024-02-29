@@ -1,0 +1,44 @@
+/*TODO CSS Colors*/
+
+/*?Colors in CSS can be represented by color names, Hex, RGB and HSL values.*/
+
+/**Background color*/
+
+p {
+    background-color: yellowgreen;
+}
+
+/**Text color*/
+p {
+    color: aqua;
+}
+
+/**Border color*/
+
+p {
+    border-color: cadetblue;
+}
+
+/**RGB value*/
+
+p {
+    color: rgb(150, 150, 50);
+}
+
+/**HEX value (specified using #rrggbb)*/
+
+p {
+    color: #3cb371;
+}
+
+/**HEX value (specified using #rgb)*/
+
+p {
+    color: #3cb;
+}
+
+/**HSL value (Hue, Saturation, Lightness)*/
+
+p {
+    color: hsl(39, 100%, 47%);
+}

@@ -1,0 +1,62 @@
+/*TODO CSS Fonts*/
+
+/*?CSS contains generic and specific fonts*/
+
+/**CSS generic font families: Serif, Sans-serif, Monospace, Cursive, Fantasy*/
+
+p {
+    font-family: monospace;
+}
+
+p {
+    font-family: serif;
+}
+
+p {
+    font-family: sans-serif;
+}
+
+p {
+    font-family: cursive;
+}
+
+p {
+    font-family: fantasy;
+}
+
+/**Font failsafe*/
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/**Font styles*/
+
+/*? 3 properties: italic, oblique, normal*/
+
+p {
+    font-style: normal;
+}
+
+/**Font size*/
+
+/*? Font size can be set in pixels, Em, percentage*/
+
+p {
+    font-size: 40px;
+}
+
+p {
+    font-size: 2.5em; /* pixels/16 = em */
+}
+
+p {
+    font-size: 100%;
+}
+
+/*? Responsive sizing*/
+
+p {
+    font-size: 10vw; /* viewport width */
+}
+

@@ -1,0 +1,60 @@
+/* TODO CSS Text*/
+
+/*? Text alignment and direction*/
+
+/** Text alignment*/
+
+p {
+    text-align: center;
+}
+
+p {
+    text-align-last: center; /* aligns last line of text */
+}
+
+p {
+    vertical-align: auto; /* vertical alignment */
+}
+
+/** Text direction*/
+
+p {
+    direction: ltr;
+    direction: rtl;
+}
+
+/** Text decoration*/
+
+p {
+    text-decoration-line: underline, overline;
+    text-decoration-color: aqua;
+    text-decoration-style: dashed;
+    text-decoration-thickness: 5px;
+    text-decoration: none;
+}
+
+/** Text transformation*/
+
+p.underline {
+    text-transform: capitalize;
+    text-transform: uppercase;
+    text-transform: lowercase;
+}
+
+/** Text spacing*/
+
+p {
+    text-indent: 20px;
+    letter-spacing: 5px; /* space between characters */
+    line-height: normal; /* space between lines */
+    word-spacing: normal; /* space between words */
+    white-space: nowrap;
+}
+
+/** Text shadow*/
+
+p {
+    text-shadow: 2px 2px 5px red; /* horizontal, vertical, blur effect */
+}
+
+
