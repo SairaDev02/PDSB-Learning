@@ -1,0 +1,18 @@
+/* TODO CSS Tables*/
+
+/** Specify table borders*/
+table, th, td {
+    border: 1px solid black;
+    width: 100%; /*? Maxing table width to the table element*/
+}
+
+/** Collapse table borders into a single border*/
+
+table {
+    border-collapse: collapse;
+}
+
+/** Border around table*/
+table {
+    border: 1px solid black;
+}

@@ -1,0 +1,56 @@
+/* TODO CSS attribute Selector*/
+
+/*? attribute selector is used to select elements with a specified attribute*/
+
+/** Example [attribute]*/
+ a[target] {
+    background-color: yellow;
+ }
+
+/*? select elements with a specified attribute and value*/
+
+/** Example [attribute="value"]*/
+
+a [target="_blank"] {
+    background-color: yellow;
+}
+
+/*? select elements with an attribute containing a specified word*/
+
+/** Example [attribute~="value"]*/
+
+a [target~="flower"] {
+    border: 5px solid yellow;
+}
+
+/*? select elements with the specified attribute, whose value can be exactly the specified value, or the specified value followed by a hyphen (-)*/
+
+/** Example [attribute|="value"]*/
+
+a [class="top"] {
+    background: yellow;
+}
+
+/*? select elements with the specified attribute, whose value starts with the specified value. */
+
+/** Example [attribute^="value"]*/
+
+a [class^="top"] {
+    background: yellow;
+}
+
+/*?  select elements whose attribute value ends with a specified value*/
+
+/** Example [attribute$="value"]*/
+
+a [class$="test"] {
+    background: yellow;
+}
+
+/*? select elements whose attribute value contains a specified value */
+
+/** Example [attribute*="value"]*/
+
+a [class*="te"] {
+    background: yellow;
+}
