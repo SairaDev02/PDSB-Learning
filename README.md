@@ -1,3 +1,3 @@
-HTML Based webpages for refreshing HTML knowledge
+Webpages and files for refreshing web development knowledge
 
 Also stores useful code snippets
