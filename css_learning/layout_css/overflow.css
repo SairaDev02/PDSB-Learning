@@ -1,1 +1,47 @@
 /*TODO CSS Overflow */
+
+/*? CSS Overflow property determines what happens to content that is too big to fit in an area */
+
+/** visible: not clipped, renders outside the element box*/
+div {
+    width: 200px;
+    height: 65px;
+    background-color: coral;
+    overflow: visible;
+}
+
+/** hidden: clipped, hide rest of the content*/
+
+div {
+    width: 200px;
+    height: 65px;
+    background-color: coral;
+    overflow: hidden;
+}
+
+/** scroll: clipped, scrollbar to see hidden content*/
+
+div {
+    width: 200px;
+    height: 65px;
+    background-color: coral;
+    overflow: scroll;
+}
+
+/** auto: adds scrollbar when necessary*/
+div {
+    width: 600px;
+    height: 65px;
+    background-color: coral;
+    overflow: auto;
+}
+
+/** overflow-x,y: sets if overflow is horizontal or vertical or both*/
+
+div {
+    width: 600px;
+    height: 65px;
+    background-color: coral;
+    overflow-x: hidden; /* hide scrollbar*/
+    overflow-y: scroll; /* adds vertical scrollbar*/
+}

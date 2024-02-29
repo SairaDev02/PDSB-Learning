@@ -1,0 +1,15 @@
+/* TODO CSS Counters*/
+
+/*? Variables with values that can be incremented by CSS rules*/
+
+/** Automatic Numbering*/
+
+body {
+    counter-reset: section;
+}
+
+h2::before {
+    counter-increment: section;
+    content: "Section "counter(section)": ";
+}
+/*? Creates a counter, increments the counter value for each h2 element and adds "Section<value of the container>:" to the beginning of each h2 element*/

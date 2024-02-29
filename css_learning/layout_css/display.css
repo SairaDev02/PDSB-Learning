@@ -7,4 +7,5 @@
 p {
     display: block; /* Starts on new line and takes full width */
     display: inline; /* Does not start on new line and takes required width */
+    display: inline-block; /* Respects top & bottom margins */
 }
