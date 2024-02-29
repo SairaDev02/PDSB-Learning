@@ -1,0 +1,32 @@
+/* TODO CSS Specificity */
+
+/*? If there are two or more CSS rules that point to the same element, */
+/*? the selector with the highest specificity will be applied */
+
+/** Example */
+
+p {
+    color: red;
+}
+
+p.test {
+    color: blue; 
+}
+
+p.test#alpha {
+    color: green; /* Applied: Highest specificity value */
+}
+/*! Use vscode hover to check specificity value */
+/** Inline element has the highest priority */
+
+/*? The latest rule when given two same rules are applied */
+
+p {
+    color: aqua;
+}
+
+p {
+    color: bisque; /* Applied */
+}
+
+/*? id > attribute, class > element */

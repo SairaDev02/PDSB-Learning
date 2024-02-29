@@ -1,0 +1,33 @@
+/*TODO Base styles in CSS*/
+
+/**Element selector*/
+
+p {
+    color: red;
+}
+
+/**CSS id selector*/
+
+#elem1 {
+    color: red;
+}
+
+/**CSS class selector*/
+
+.elem1 {
+    color: red;
+}
+
+/**CSS universal selector*/
+
+* {
+    text-align: center;
+}
+
+/**CSS grouping*/
+
+h1, p, span {
+    color: lavender;
+}
+
+/**
