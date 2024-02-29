@@ -1,0 +1,38 @@
+/* TODO CSS Lists*/
+
+/*? CSS list properties allow
+? Set different list item markers for ol
+? Set different list item markers for ul
+? Set an image as the list item marker
+? Add background colours to list and list items 
+*/
+
+/** Different list item markers*/
+
+ul {
+    list-style-type: circle;
+}
+
+ol {
+    list-style-type: georgian;
+}
+
+/** Image as list item markers*/
+
+ul {
+    list-style-image: url(none.gif);
+}
+
+/*? Position list item markers*/
+
+ul.a { 
+    list-style-position: inside;
+    list-style-position: outside;
+}
+/** Remove default setting*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
