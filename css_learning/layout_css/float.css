@@ -1,0 +1,22 @@
+/*TODO CSS float */
+
+/*? CSS float and clear property*/
+
+/** Float: specifies how an element should float in its container*/
+ 
+img {
+    float: right;
+    float: left;
+    float: none;
+    float: inherit;
+}
+
+/** Clear: specifies what should happen with the element that is floating next to a floating element*/
+
+div1 {
+    float: left;
+}
+div2 {
+    clear: left;
+}
+

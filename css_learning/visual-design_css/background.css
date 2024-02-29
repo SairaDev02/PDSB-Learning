@@ -1,0 +1,19 @@
+/* TODO CSS Backgrounds */
+
+/*? CSS background property are used to add background effects for elements */
+
+/** Example*/
+
+body {
+    background-color: aqua; /* specific background color*/
+    opacity: 50%; /* sets opacity of the background*/
+
+    background-image: url("cat.gif"); /* specify image used for background*/
+    
+    background-repeat: url("cat.gif"); /* repeats an image both horizontally and vertically*/
+    background-repeat: repeat-x; /* to repeat only horizontally*/
+    background-repeat: no-repeat; /* place image only once*/
+    background-position: right top; /* specify position of the background image*/
+
+    background-attachment: fixed; /* specifies of background image should scroll or be fixed*/
+}

@@ -1,0 +1,15 @@
+/* TODO CSS Borders*/
+
+/*? Border style, width, color, and sides properties can be used to customize borders*/
+
+/** Example*/
+p.border {
+    border-style: dashed;
+    width: auto;
+    color: black;
+    border-top-style: dotted;
+    border-right-style: double;
+    border-bottom-style: groove;
+    border-left-style: hidden;
+}
+

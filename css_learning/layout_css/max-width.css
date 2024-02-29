@@ -1,0 +1,15 @@
+/* TODO CSS width, max-width, margin-auto */
+
+/** Example */
+
+div.ex1 {
+    width: 500px; /* may add horizontal scrollbar when viewport is smaller than 500px */
+    margin: auto; /* sets element to center horizontally within its container */
+    border: 3px solid red;
+}
+
+div.ex1 {
+    max-width:500px; /* handles small viewports better */
+    margin: auto;
+    border: 3px solid red;
+}

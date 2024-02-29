@@ -1,0 +1,41 @@
+/* TODO CSS Navbar*/
+
+/*? A navigation bar is a list of links*/
+
+/** Example*/
+/* 
+<ul>
+    <li><a href="default.asp">Home</a></li>
+    <li><a href="news.asp">News</a></li>
+    <li><a href="about.asp">About</a></li>
+</ul>
+*/
+
+/*? Remove bullets, margins and padding*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/** Set vertical navbar*/
+li a {
+    display: block; /* make whole link area clickable*/
+    width: 60px; /* block elements take full width*/
+}
+
+/** Set horizontal navbar*/
+li {
+    display: inline;
+}
+
+/** Set floating horizontal floating list items*/
+li {
+    float: left; /* get block elements to float next to each other*/
+}
+
+a {
+    display: block; 
+    padding: 8px;
+    background-color: #ddd;
+}

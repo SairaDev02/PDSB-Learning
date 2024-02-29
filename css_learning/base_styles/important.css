@@ -1,0 +1,13 @@
+/* TODO CSS Important */
+
+/*? Overrides all previous styling rules */
+
+/** Example */
+
+.text {
+    color: aqua;
+}
+
+p {
+    color: red !important; /* Overrides the .text class rule */ 
+}

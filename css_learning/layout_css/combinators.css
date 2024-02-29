@@ -1,0 +1,31 @@
+/* TODO CSS Combinators */
+
+/*? Combinators allows selecting mulitple elements to apply styles to */
+
+/** Descendent Selector*/
+
+div p {
+    color: rebeccapurple;
+}
+/* Selects all p elements inside div elements*/
+
+/** Child Selector*/
+
+div > p {
+    background-color: red;
+}
+/* Selects all p element that are children of a div element*/
+
+/** Adjacent sibling Selector*/
+
+div + p {
+    background-color: antiquewhite;
+}
+/* Selects an element that is directly after another specific element (next to)*/
+
+/** General sibling Selector*/
+div ~ p {
+    background-color: black;
+}
+/* Selects all p element that are next siblings of div element*/
+

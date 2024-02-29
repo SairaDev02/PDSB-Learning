@@ -1,0 +1,43 @@
+/* TODO CSS Pseudoelement*/
+
+/*? CSS Pseudo-element is used to style specified parts of an element*/
+
+/** Syntax*/
+/*  selector:pseudo-element {
+        property: value;    
+    }
+*/
+
+/** Example*/
+p::first-letter {
+    color: yellowgreen;
+    font-size: larger;
+}
+
+/* mulit pseudo-element*/
+p::first-line {
+    color: blue;
+    font-variant: small-caps;
+}
+
+/* ::before = to insert content before the content of an element*/
+h1::before {
+     content: url(smiley.gif);
+} /*? insert image before every h1 element*/
+
+/* ::after = to insert content after the content of an element*/
+h1::after {
+    content: url(smiley.gif);
+} /*? insert image after every h1 element*/
+
+/* ::marker = selects the markers of list items*/
+::marker {
+    color: coral;
+    font-size: 23px;
+}
+
+/* ::selection = represents the portion of an element that is selected ny a user*/
+::selection {
+    color: darkgreen;
+    background: yellow;
+}

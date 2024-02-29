@@ -1,0 +1,14 @@
+/* TODO CSS Pseudoclass*/
+
+/*? For defining a special state of an element*/
+
+/** Syntax*/
+/*selector:pseudo-class {
+     property: value;
+    }
+*/
+
+/** Example*/
+div:hover {
+    background-color: aqua;
+}

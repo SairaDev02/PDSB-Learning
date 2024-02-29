@@ -1,0 +1,33 @@
+/* TODO CSS Links*/
+
+/*? CSS can style links*/
+
+/**Example:*/
+
+a {
+    color: hotpink;
+}
+
+/** Style states*/
+
+a:link {
+    color: red;
+}
+
+a:visited {
+    color: green;
+}
+
+a:hover {
+    color: hotpink;
+}
+
+a:active {
+    color: blue;
+}
+
+/** Text decoration*/
+
+a {
+    text-decoration: none; /* removes underline under links*/
+}

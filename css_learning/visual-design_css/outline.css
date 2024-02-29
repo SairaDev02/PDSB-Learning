@@ -1,0 +1,11 @@
+/* TODO CSS Outline*/
+
+/*? An outline is a line drawn outside the element's border*/
+ /** Example*/
+
+p {
+    outline-style: dotted;
+    outline-color: blue;
+    outline-width: 20px;
+    outline-offset: 5px;
+}
