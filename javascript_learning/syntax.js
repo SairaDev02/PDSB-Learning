@@ -38,8 +38,15 @@ let aa = 12; //assignment operator
 
 let varA = 1;
 let VarA = 1;
-
 //! Different variables despite same name
 
+//? JS Function syntax
 
+function vals(a, b) { //* parameters
+    //* code to be executed
+    return a * b;
+}
 
+//? JS function call
+
+let nameRes = vals();
